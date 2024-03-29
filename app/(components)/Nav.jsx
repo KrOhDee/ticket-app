@@ -1,4 +1,12 @@
-import { faHome, faTicket } from '@fortawesome/free-solid-svg-icons';
+import {
+  faHome,
+  faTicket,
+  faScrewdriver,
+  faToolbox,
+  faCog,
+  faShieldAlt,
+  faWrench,
+} from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Link from 'next/link';
 
@@ -11,6 +19,14 @@ const Nav = () => {
         </Link>
         <Link href="/TicketPage/new">
           <FontAwesomeIcon icon={faTicket} className="icon" />
+        </Link>
+      </div>
+      <div className="flex gap-1 items-center">
+        <Link href="/" style={{ display: 'contents' }}>
+          <p className="text-default-text text-[1.1rem] p-0 m-0">
+            Fix <span className="text-red-400">Fleet</span>
+          </p>
+          <FontAwesomeIcon className="text-white" icon={faShieldAlt} />
         </Link>
       </div>
       <div>
